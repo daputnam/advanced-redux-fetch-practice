@@ -10,80 +10,80 @@
 
 
 ### Create actions in actions/index.js to retrieve data
-* loadContacts
+*x loadContacts
     * return a thunk function
     * make a fetch call to /contacts
     * in the second then, dispatch to contactsLoaded
-* contactsLoaded(contacts)
+*x contactsLoaded(contacts)
     * return an action
     * type is “CONTACTS_LOADED”
     * value is contacts
-* loadVehicles
+*x loadVehicles
     * return a thunk function
     * make a fetch call to /vehicles
     * in the second then, dispatch to vehiclesLoaded
-* vehiclesLoaded(vehicles)
+*x vehiclesLoaded(vehicles)
     * return an action
     * type is “VEHICLES_LOADED”
     * value is vehicles
-* loadComments
+*x loadComments
     * return a thunk function
     * make a fetch call to /comments
     * in the second then, dispatch to commentsLoaded
-* commentsLoaded(comments)
+*x commentsLoaded(comments)
     * return an action
     * type is “COMMENTS_LOADED”
     * value is comments
-* loadProducts
+*x loadProducts
     * return a thunk function
     * make a fetch call to /products
     * in the second then, dispatch to productsLoaded
-* productsLoaded(products)
+*x productsLoaded(products)
     * return an action
     * type is “PRODUCTS_LOADED”
     * value is products
 
 ### Create actions in actions/index.js to create data
-* createProduct(product)
+*x createProduct(product)
    * return a thunk function
    * make a fetch call to /products as a POST
    * include the product in the body 
    * in the first then, dispatch to loadProducts
 
-* createContact(contact)
+*x createContact(contact)
    * return a thunk function
    * make a fetch call to /contacts as a POST
    * include the contact in the body 
    * in the first then, dispatch to loadContacts
 
-* createComment(comment)
+*x createComment(comment)
    * return a thunk function
    * make a fetch call to /comments as a POST
    * include the comment in the body 
    * in the first then, dispatch to loadComments
 
-* createVehicle(vehicle)
+*x createVehicle(vehicle)
    * return a thunk function
    * make a fetch call to /vehicles as a POST
    * include the vehicle in the body 
    * in the first then, dispatch to loadVehicles
 
 ### Create reducers in reducers/index.js
-* Create reducers based on the state in state.js
-* Determine which action the reducers should care about 
-* return the appropriate value
+*x Create reducers based on the state in state.js
+*x Determine which action the reducers should care about 
+*x return the appropriate value
 
 ### AppContainer
-* In AppContainer.js
-* Import connect
-* Import actions loadContacts, loadVehicles, loadComments, loadProducts
-* mapDispatchToProps for these actions to props of the same name
-* Connect and export
-* Remember how to use connect when there is no mapStateToProps
+*x In AppContainer.js
+*x Import connect
+*x Import actions loadContacts, loadVehicles, loadComments, loadProducts
+*x mapDispatchToProps for these actions to props of the same name
+*x Connect and export
+*x Remember how to use connect when there is no mapStateToProps
 
 ### App
-* In App.js
-* call loadContacts, loadVehicles,loadComments,loadProducts in componentDidMount
+*x In App.js
+*x call loadContacts, loadVehicles,loadComments,loadProducts in componentDidMount
 
 ### Points
 * Base points - 20
